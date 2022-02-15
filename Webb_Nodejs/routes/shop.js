@@ -9,9 +9,15 @@ router.get('/', (req, res) => {
     res.render('index')
 });
 
-router.get("/about", function(req, res, next) {
+router.get("/shop", function(req, res, next) {
   //  res.sendFile(path.join(__dirname, '../', 'views', 'ftg1.html'));
-  res.render
+  res.render("shop")
 });
+router.get("/checkout", (req, res)=>{
+  res.render("checkout")
+})
+router.get('/cart', (req,res)=> {
+  res.render("cart")
+})
 
 module.exports = router;
