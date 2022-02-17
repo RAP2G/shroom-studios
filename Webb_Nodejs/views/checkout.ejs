@@ -2,25 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title  -->
-    <title>Karl - Fashion Ecommerce Template | Checkout</title>
-
-    <!-- Favicon  -->
-    <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
+<%- include('./partials/head') %> 
 </head>
 
 <body>
@@ -44,35 +26,35 @@
                         <div class="checkout_details_area mt-50 clearfix">
 
                             <div class="cart-page-heading">
-                                <h5>Billing Address</h5>
-                                <p>Enter your cupone code</p>
+                                <h5>Betal adress</h5>
+                                <p>Ange din kupong kod</p>
                             </div>
 
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="first_name">First Name <span>*</span></label>
+                                        <label for="first_name">Förnamn <span>*</span></label>
                                         <input type="text" class="form-control" id="first_name" value="" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="last_name">Last Name <span>*</span></label>
+                                        <label for="last_name">Efternamn <span>*</span></label>
                                         <input type="text" class="form-control" id="last_name" value="" required>
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <label for="company">Company Name</label>
+                                        <label for="company">Företag</label>
                                         <input type="text" class="form-control" id="company" value="">
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <label for="country">Country <span>*</span></label>
+                                        <label for="country">Land <span>*</span></label>
                                         <select class="custom-select d-block w-100" id="country">
-                                        <option value="usa">United States</option>
-                                        <option value="uk">United Kingdom</option>
-                                        <option value="ger">Germany</option>
-                                        <option value="fra">France</option>
-                                        <option value="ind">India</option>
-                                        <option value="aus">Australia</option>
-                                        <option value="bra">Brazil</option>
-                                        <option value="cana">Canada</option>
+                                        <option value="usa">Sverige</option>
+                                        <option value="uk">Norge</option>
+                                        <option value="ger">Finland</option>
+                                        <option value="fra">Danmark</option>
+                                        <option value="ind">Tyskland</option>
+                                        <option value="aus">Frankrike</option>
+                                        <option value="bra">England</option>
+                                        <option value="cana">Kazakstan</option>
                                     </select>
                                     </div>
                                     <div class="col-12 mb-3">
@@ -81,19 +63,19 @@
                                         <input type="text" class="form-control" id="street_address2" value="">
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <label for="postcode">Postcode <span>*</span></label>
+                                        <label for="postcode">Postnummer <span>*</span></label>
                                         <input type="text" class="form-control" id="postcode" value="">
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <label for="city">Town/City <span>*</span></label>
+                                        <label for="city">Stad <span>*</span></label>
                                         <input type="text" class="form-control" id="city" value="">
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <label for="state">Province <span>*</span></label>
+                                        <label for="state">Stad <span>*</span></label>
                                         <input type="text" class="form-control" id="state" value="">
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <label for="phone_number">Phone No <span>*</span></label>
+                                        <label for="phone_number">Telefonnummer <span>*</span></label>
                                         <input type="number" class="form-control" id="phone_number" min="0" value="">
                                     </div>
                                     <div class="col-12 mb-4">
@@ -108,11 +90,11 @@
                                         </div>
                                         <div class="custom-control custom-checkbox d-block mb-2">
                                             <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">Create an accout</label>
+                                            <label class="custom-control-label" for="customCheck2">Skapa ett konto</label>
                                         </div>
                                         <div class="custom-control custom-checkbox d-block">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                            <label class="custom-control-label" for="customCheck3">Subscribe to our newsletter</label>
+                                            <label class="custom-control-label" for="customCheck3">Prenumera på vårat nyhetsbrev</label>
                                         </div>
                                     </div>
                                 </div>
@@ -124,16 +106,16 @@
                         <div class="order-details-confirmation">
 
                             <div class="cart-page-heading">
-                                <h5>Your Order</h5>
-                                <p>The Details</p>
+                                <h5>Din Beställning</h5>
+                                <p>Detaljer</p>
                             </div>
 
                             <ul class="order-details-form mb-4">
-                                <li><span>Product</span> <span>Total</span></li>
-                                <li><span>Cocktail Yellow dress</span> <span>$59.90</span></li>
-                                <li><span>Subtotal</span> <span>$59.90</span></li>
-                                <li><span>Shipping</span> <span>Free</span></li>
-                                <li><span>Total</span> <span>$59.90</span></li>
+                                <li><span>Produkt</span> <span>Total</span></li>
+                                <li><span>Cocktail Yellow klädning</span> <span>599kr</span></li>
+                                <li><span>Delsumma</span> <span>599kr</span></li>
+                                <li><span>Leverans</span> <span>Gratis</span></li>
+                                <li><span>Totalt</span> <span>599kr</span></li>
                             </ul>
 
 
@@ -147,7 +129,7 @@
 
                                     <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integ er bibendum sodales arcu id te mpus. Ut consectetur lacus.</p>
+                                            <p>Apple bottom Jeanss</p>
                                         </div>
                                     </div>
                                 </div>
